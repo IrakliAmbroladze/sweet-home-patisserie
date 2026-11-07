@@ -5,6 +5,8 @@ use leptos_router::{
     StaticSegment,
 };
 
+stylance::import_crate_style!(style, "src/shared/ui/button.module.scss");
+
 pub fn shell(options: LeptosOptions) -> impl IntoView {
     view! {
         <!DOCTYPE html>
@@ -56,6 +58,9 @@ fn HomePage() -> impl IntoView {
 
     view! {
         <h1>"Welcome to Leptos!"</h1>
-        <button on:click=on_click>"Click Me: " {count}</button>
+        <button class=style::wrapper on:click=on_click>
+            "Click Me: "
+            {count}
+        </button>
     }
 }
