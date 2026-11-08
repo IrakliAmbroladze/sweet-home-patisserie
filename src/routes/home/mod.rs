@@ -1,4 +1,5 @@
 use leptos::prelude::*;
+use leptos_router::components::A;
 
 stylance::import_crate_style!(style, "src/routes/home/home_page.module.scss");
 
@@ -6,7 +7,22 @@ stylance::import_crate_style!(style, "src/routes/home/home_page.module.scss");
 pub fn HomePage() -> impl IntoView {
     view! {
         <section class=style::hero>
-            <h1>"Sweet home patisseriSweet home patisse"</h1>
+            <div class=style::container>
+                <div class=style::wrapper>
+                    <h2 class=style::title>"საოცარი გემო."</h2>
+                    <h2 class=style::title>
+                        "საკონდიტრო ხელოვნება."
+                    </h2>
+                    <div class=style::heart>
+                        <img src="/images/heart.png" alt="" />
+                    </div>
+                    <div class=style::desserts_btn_wrapper>
+                        <A href="/desserts" {..} class=style::desserts_btn>
+                            "დაათვალიერე დესერტები >"
+                        </A>
+                    </div>
+                </div>
+            </div>
         </section>
     }
 }
