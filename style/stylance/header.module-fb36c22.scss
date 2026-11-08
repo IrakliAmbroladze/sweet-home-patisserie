@@ -1,16 +1,30 @@
 .wrapper-fb36c22 {
   position: sticky;
   top: 0;
-  background-color: sandybrown;
-  border-bottom: 1px solid blue;
+  background: linear-gradient(265deg, rgba(242, 242, 242, 0) 0%, rgba(244, 164, 96, 1) 30%);
+  border-bottom: 1px solid #DB6600;
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
+  .container-fb36c22 {
+    margin: 0 10px;
+    width: 100%;
+  }
 
-  .navigation-fb36c22 {
+  .header_content-fb36c22 {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+  }
+
+}
+
+@media screen and (min-width: 1420px) {
+  .wrapper-fb36c22 {
+    .container-fb36c22 {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1400px;
+    }
   }
 }

@@ -1,2 +1,6 @@
 @use "./base/_reset.scss";
 @use "./stylance";
+
+main {
+  height: 100vh;
+}
