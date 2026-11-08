@@ -5,7 +5,7 @@ use leptos_router::{
     StaticSegment,
 };
 
-use crate::shared::components::button::Button;
+use crate::modules::home_page::HomePage;
 
 pub fn shell(options: LeptosOptions) -> impl IntoView {
     view! {
@@ -36,7 +36,7 @@ pub fn App() -> impl IntoView {
         <Stylesheet id="leptos" href="/pkg/sweet-home-patisserie.css" />
 
         // sets the document title
-        <Title text="Welcome to Leptos" />
+        <Title text="Sweet patisserie" />
 
         // content for this welcome page
         <Router>
@@ -46,19 +46,5 @@ pub fn App() -> impl IntoView {
                 </Routes>
             </main>
         </Router>
-    }
-}
-
-/// Renders the home page of your application.
-#[component]
-fn HomePage() -> impl IntoView {
-    // Creates a reactive value to update the button
-    let count = RwSignal::new(0);
-    let on_click = move |_| *count.write() += 1;
-
-    view! {
-        <h1>"Welcome to Leptos!"</h1>
-        <button on:click=on_click>"Click Me: " {count}</button>
-        <Button />
     }
 }
