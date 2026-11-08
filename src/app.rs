@@ -5,7 +5,7 @@ use leptos_router::{
     StaticSegment,
 };
 
-use crate::routes::home::HomePage;
+use crate::{routes::home::HomePage, shared::components::header::Header};
 
 pub fn shell(options: LeptosOptions) -> impl IntoView {
     view! {
@@ -40,6 +40,7 @@ pub fn App() -> impl IntoView {
 
         // content for this welcome page
         <Router>
+            <Header />
             <main>
                 <Routes fallback=|| "Page not found.".into_view()>
                     <Route path=StaticSegment("") view=HomePage />
