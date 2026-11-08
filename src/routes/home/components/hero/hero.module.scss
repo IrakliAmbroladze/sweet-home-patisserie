@@ -66,6 +66,12 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 600px;
+  }
+}
+
 @media screen and (min-width: 1420px) {
   .container {
     margin: 0 auto;

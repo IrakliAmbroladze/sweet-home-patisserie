@@ -1,8 +1,7 @@
 mod components;
 
+use crate::routes::home::components::{desserts_list::DessertsListh, hero::Hero};
 use leptos::prelude::*;
-
-use crate::routes::home::components::hero::Hero;
 
 stylance::import_crate_style!(style, "src/routes/home/home_page.module.scss");
 
@@ -11,6 +10,7 @@ pub fn HomePage() -> impl IntoView {
     view! {
         <>
             <Hero />
+            <DessertsListh />
         </>
     }
 }
