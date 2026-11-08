@@ -1,5 +1,9 @@
+mod burger_icon;
+
 use leptos::prelude::*;
 use leptos_router::components::A;
+
+use crate::shared::components::header::navigation::burger_icon::BurgerIcon;
 
 stylance::import_crate_style!(
     style,
@@ -8,11 +12,25 @@ stylance::import_crate_style!(
 
 #[component]
 pub fn Navigation() -> impl IntoView {
+    let (is_burger_menu_open, set_is_burger_menu_open) = signal(false);
+
     view! {
-        <nav class=style::navigation>
-            <A href="/desserts">"დესერტები"</A>
-            <A href="/about-us">"ჩვენი ისტორია"</A>
-            <A href="/contact">"კონტაქტი"</A>
-        </nav>
+        <>
+            <BurgerIcon
+                is_open=is_burger_menu_open
+                on_toggle=move |_| set_is_burger_menu_open.update(|prev| *prev = !*prev)
+            />
+            <nav class=move || {
+                if is_burger_menu_open.get() {
+                    format!("{} {}", style::navigation, style::open)
+                } else {
+                    style::navigation.to_string()
+                }
+            }>
+                <A href="/desserts">"დესერტები"</A>
+                <A href="/about-us">"ჩვენი ისტორია"</A>
+                <A href="/contact">"კონტაქტი"</A>
+            </nav>
+        </>
     }
 }
