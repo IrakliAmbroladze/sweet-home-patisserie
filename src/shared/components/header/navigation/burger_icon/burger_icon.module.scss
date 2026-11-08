@@ -1,0 +1,15 @@
+.burger_icon {
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 150ms ease-in-out;
+  background: none;
+  border: 0;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .burger_icon {
+    display: none;
+  }
+}
