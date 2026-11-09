@@ -2,7 +2,7 @@
   position: sticky;
   z-index: 1000;
   top: 0;
-  background: linear-gradient(265deg, rgba(242, 242, 242, 0) 0%, rgba(244, 164, 96, 0.9) 30%);
+  background: linear-gradient(265deg, rgba(242, 242, 242, 0) 0%, rgba(244, 164, 96, 0.9) 30%, #4b2d2d);
   border-bottom: 1px solid #DB6600;
   height: 80px;
   display: flex;
@@ -17,6 +17,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .logo_wrapper {
+    height: 50px;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
   }
 
 }
