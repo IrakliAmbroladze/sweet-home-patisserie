@@ -12,29 +12,29 @@ pub fn Desserts() -> impl IntoView {
                 <div class=style::image_wrapper>
                     <img src="/images/dessert_1.jpg" alt="image" />
                 </div>
-                <div></div>
-                <div></div>
+                <h2>ტორტები</h2>
+                <div>კლასიკური და საფირმო</div>
             </div>
             <div class=style::card>
                 <div class=style::image_wrapper>
                     <img src="/images/dessert_2.jpg" alt="image" />
                 </div>
-                <div></div>
-                <div></div>
+                <h2>ტკბილეული</h2>
+                <div>მაფინები და მინი დესერტები</div>
             </div>
             <div class=style::card>
                 <div class=style::image_wrapper>
                     <img src="/images/dessert_3.jpg" alt="image" />
                 </div>
-                <div></div>
-                <div></div>
+                <h2>ცომეული</h2>
+                <div>კრუასანი და ფუნტუშები</div>
             </div>
             <div class=style::card>
                 <div class=style::image_wrapper>
                     <img src="/images/dessert_4.jpg" alt="image" />
                 </div>
-                <div></div>
-                <div></div>
+                <h2>დესერტი</h2>
+                <div>ნამცხვრები და ტკბილეული</div>
             </div>
         </div>
     }
