@@ -12,7 +12,11 @@ pub fn Header() -> impl IntoView {
         <header class=style::wrapper>
             <div class=style::container>
                 <div class=style::header_content>
-                    <A href="/">"Miraki"</A>
+                    <A href="/">
+                        <div class=style::logo_wrapper>
+                            <img src="/logo.png" alt="logo" />
+                        </div>
+                    </A>
                     <Navigation />
                 </div>
             </div>
