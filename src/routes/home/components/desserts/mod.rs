@@ -8,10 +8,34 @@ stylance::import_crate_style!(
 pub fn Desserts() -> impl IntoView {
     view! {
         <div class=style::grid>
-            <div class=style::card>1</div>
-            <div class=style::card>2</div>
-            <div class=style::card>3</div>
-            <div class=style::card>4</div>
+            <div class=style::card>
+                <div class=style::image_wrapper>
+                    <img src="/images/dessert_1.jpg" alt="image" />
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class=style::card>
+                <div class=style::image_wrapper>
+                    <img src="/images/dessert_2.jpg" alt="image" />
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class=style::card>
+                <div class=style::image_wrapper>
+                    <img src="/images/dessert_3.jpg" alt="image" />
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class=style::card>
+                <div class=style::image_wrapper>
+                    <img src="/images/dessert_4.jpg" alt="image" />
+                </div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     }
 }
