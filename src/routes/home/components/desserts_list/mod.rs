@@ -7,7 +7,7 @@ stylance::import_crate_style!(
 );
 
 #[component]
-pub fn DessertsListh() -> impl IntoView {
+pub fn DessertsList() -> impl IntoView {
     view! {
         <section class=style::wrapper>
             <h2 class=style::title>ჩვენი დესერტები</h2>
