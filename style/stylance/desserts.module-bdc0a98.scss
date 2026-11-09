@@ -1,4 +1,37 @@
-.grid-bdc0a98 {
-  display: grid;
-  grid-template-columns: 1fr;
-}
+  .grid-bdc0a98 {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 2px solid red;
+    width: 100%;
+    gap: 4px;
+    justify-items: center;
+  }
+
+  .card-bdc0a98 {
+    background-color: yellow;
+    border: 1px solid black;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  @media(min-width: 600px) {
+
+    .grid-bdc0a98 {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+
+  @media(min-width: 1000px) {
+
+    .grid-bdc0a98 {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media(min-width: 1200px) {
+
+    .grid-bdc0a98 {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }

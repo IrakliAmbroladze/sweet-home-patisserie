@@ -8,10 +8,10 @@ stylance::import_crate_style!(
 pub fn Desserts() -> impl IntoView {
     view! {
         <div class=style::grid>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
+            <div class=style::card>1</div>
+            <div class=style::card>2</div>
+            <div class=style::card>3</div>
+            <div class=style::card>4</div>
         </div>
     }
 }

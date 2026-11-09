@@ -1,4 +1,37 @@
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-}
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 2px solid red;
+    width: 100%;
+    gap: 4px;
+    justify-items: center;
+  }
+
+  .card {
+    background-color: yellow;
+    border: 1px solid black;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  @media(min-width: 600px) {
+
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+
+  @media(min-width: 1000px) {
+
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media(min-width: 1200px) {
+
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
