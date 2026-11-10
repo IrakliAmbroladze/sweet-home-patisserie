@@ -1,3 +1,4 @@
+#[derive(Debug)]
 pub struct DessertItem {
     pub title: &'static str,
     pub desc: &'static str,

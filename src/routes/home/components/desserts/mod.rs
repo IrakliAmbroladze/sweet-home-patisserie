@@ -1,3 +1,5 @@
+use crate::routes::home::components::dessert_item::DessertCard;
+
 use super::super::constants::DESSERTS;
 use leptos::prelude::*;
 stylance::import_crate_style!(
@@ -9,19 +11,7 @@ stylance::import_crate_style!(
 pub fn Desserts() -> impl IntoView {
     view! {
         <div class=style::grid>
-        {
-           DESSERTS.iter().map(|item| {
-                    view! {
-                        <div class=style::card>
-                            <div class=style::image_wrapper>
-                                <img src=item.img alt="image" />
-                            </div>
-                            <h2 class=style::title>{item.title}</h2>
-                            <div>{item.desc}</div>
-                        </div>
-                    }
-                }).collect::<Vec<_>>()
-        }
+            {DESSERTS.iter().map(|item| view! { <DessertCard item /> }).collect_view()}
         </div>
     }
 }
