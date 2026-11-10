@@ -17,7 +17,8 @@
 }
 
 .content {
-  background-color: #F8EBDB;
+  position: relative;
+  background-color: rgb(250, 221, 179);
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -37,6 +38,21 @@
     font-size: 1.1rem;
   }
 }
+
+.plant {
+  position: absolute;
+  width: 50px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.leaves {
+  position: absolute;
+  width: 50px;
+  left: 10px;
+  top: 10px;
+}
+
 
 @media (min-width: 786px) {
   .wrapper {

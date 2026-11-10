@@ -21,6 +21,8 @@ pub fn Kitchen() -> impl IntoView {
                     <p class=style::description>
                         თითოეული დესერტი მზადდება სიყვარულით, საუკეთესო ინგრედიენტებით და პროფესიონალური ოსტატობით
                     </p>
+                    <img src="/images/leaves.png" alt="leaves" class=style::leaves />
+                    <img src="/images/plant.png" alt="plant" class=style::plant />
 
                 </div>
             </div>
