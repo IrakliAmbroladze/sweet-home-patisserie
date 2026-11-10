@@ -1,4 +1,5 @@
 mod components;
+mod constants;
 
 use crate::routes::home::components::{desserts_list::DessertsList, hero::Hero};
 use leptos::prelude::*;
