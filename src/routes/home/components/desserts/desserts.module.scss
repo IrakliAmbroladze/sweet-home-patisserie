@@ -6,52 +6,12 @@
     justify-items: center;
   }
 
-  .card {
-    border: 1px solid #654321;
-    background-color: #faddb3;
-    width: 100%;
-    max-width: 300px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
-    padding: 0 0 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    border-radius: 32px;
-    overflow: hidden;
-    user-select: none;
-    cursor: pointer;
-  }
-
-  .image_wrapper {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: all 700ms ease-in-out;
-
-      &:hover {
-        transform: scale(1.05);
-      }
-    }
-  }
-
-  .title {
-    font-weight: 600;
-    font-size: 1.2rem;
-  }
-
   @media(min-width: 600px) {
 
     .grid {
       grid-template-columns: 1fr 1fr;
     }
   }
-
 
   @media(min-width: 1000px) {
 
