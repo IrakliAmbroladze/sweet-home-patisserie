@@ -1,0 +1,66 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.picture {
+  height: 300px;
+  flex: 1 0 auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.content {
+  position: relative;
+  background-color: rgb(250, 221, 179);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  .title {
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .description {
+    line-height: 120%;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+}
+
+.plant {
+  position: absolute;
+  width: 50px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.leaves {
+  position: absolute;
+  width: 50px;
+  left: 10px;
+  top: 10px;
+}
+
+
+@media (min-width: 786px) {
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .picture {
+    height: auto;
+    width: 50%;
+  }
+}
