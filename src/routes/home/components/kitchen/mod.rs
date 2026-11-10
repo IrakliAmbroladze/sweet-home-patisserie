@@ -15,8 +15,10 @@ pub fn Kitchen() -> impl IntoView {
                     <img src="/images/kitchen.jpg" alt="picture" />
                 </div>
                 <div class=style::content>
-                    <h2>ჩვენი სამზარეულოდან</h2>
-                    <p>
+                    <h2 class=style::title>
+                        ჩვენი სამზარეულოდან
+                    </h2>
+                    <p class=style::description>
                         თითოეული დესერტი მზადდება სიყვარულით, საუკეთესო ინგრედიენტებით და პროფესიონალური ოსტატობით
                     </p>
 
