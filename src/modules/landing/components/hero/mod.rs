@@ -1,6 +1,9 @@
 use leptos::prelude::*;
 use leptos_router::components::A;
-stylance::import_crate_style!(style, "src/routes/home/components/hero/hero.module.scss");
+stylance::import_crate_style!(
+    style,
+    "src/modules/landing/components/hero/hero.module.scss"
+);
 
 #[component]
 pub fn Hero() -> impl IntoView {

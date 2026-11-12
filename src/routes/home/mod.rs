@@ -1,7 +1,8 @@
 mod components;
 mod constants;
 
-use crate::routes::home::components::{desserts_list::DessertsList, hero::Hero, kitchen::Kitchen};
+use crate::modules::landing::components::hero::Hero;
+use crate::routes::home::components::{desserts_list::DessertsList, kitchen::Kitchen};
 use leptos::prelude::*;
 
 stylance::import_crate_style!(style, "src/routes/home/home_page.module.scss");
