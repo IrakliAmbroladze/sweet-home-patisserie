@@ -1,11 +1,11 @@
-.wrapper-c52f3d7 {
+.wrapper-495c2a7 {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
   overflow: hidden;
 }
 
-.picture-c52f3d7 {
+.picture-495c2a7 {
   height: 300px;
   flex: 1 0 auto;
 
@@ -16,7 +16,7 @@
   }
 }
 
-.content-c52f3d7 {
+.content-495c2a7 {
   position: relative;
   background-color: rgb(250, 221, 179);
   padding: 50px;
@@ -26,27 +26,27 @@
   align-items: center;
   gap: 12px;
 
-  .title-c52f3d7 {
+  .title-495c2a7 {
     font-weight: 600;
     text-align: center;
     font-size: 1.5rem;
   }
 
-  .description-c52f3d7 {
+  .description-495c2a7 {
     line-height: 120%;
     text-align: center;
     font-size: 1.1rem;
   }
 }
 
-.plant-c52f3d7 {
+.plant-495c2a7 {
   position: absolute;
   width: 50px;
   right: 10px;
   bottom: 10px;
 }
 
-.leaves-c52f3d7 {
+.leaves-495c2a7 {
   position: absolute;
   width: 50px;
   left: 10px;
@@ -55,11 +55,11 @@
 
 
 @media (min-width: 786px) {
-  .wrapper-c52f3d7 {
+  .wrapper-495c2a7 {
     flex-direction: row;
   }
 
-  .picture-c52f3d7 {
+  .picture-495c2a7 {
     height: auto;
     width: 50%;
   }

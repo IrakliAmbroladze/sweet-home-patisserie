@@ -2,7 +2,7 @@ use leptos::prelude::*;
 
 stylance::import_crate_style!(
     style,
-    "src/routes/home/components/kitchen/kitchen.module.scss"
+    "src/modules/landing/components/kitchen/kitchen.module.scss"
 );
 stylance::import_crate_style!(shared, "style/shared.module.scss");
 
