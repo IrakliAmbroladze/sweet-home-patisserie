@@ -1,5 +1,5 @@
 use crate::modules::{
-    desserts::components::desserts::Desserts,
+    desserts::Desserts,
     landing::components::{hero::Hero, kitchen::Kitchen},
 };
 use leptos::prelude::*;

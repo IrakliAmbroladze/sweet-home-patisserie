@@ -1,3 +1,3 @@
-pub mod dessert_item;
-pub mod desserts;
-pub mod desserts_grid;
+pub(super) mod dessert_item;
+pub(super) mod desserts;
+pub(super) mod desserts_grid;
