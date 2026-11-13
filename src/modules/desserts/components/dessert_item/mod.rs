@@ -1,4 +1,4 @@
-use crate::modules::desserts::constants;
+use super::super::constants;
 use leptos::prelude::*;
 
 stylance::import_crate_style!(

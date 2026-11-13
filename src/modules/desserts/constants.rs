@@ -1,5 +1,5 @@
 #[derive(Debug)]
-pub struct DessertItem {
+pub(super) struct DessertItem {
     pub title: &'static str,
     pub desc: &'static str,
     pub img: &'static str,
