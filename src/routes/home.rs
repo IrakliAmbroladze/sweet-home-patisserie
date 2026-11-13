@@ -1,5 +1,5 @@
 use crate::modules::{
-    desserts::components::desserts_list::DessertsList,
+    desserts::components::desserts::Desserts,
     landing::components::{hero::Hero, kitchen::Kitchen},
 };
 use leptos::prelude::*;
@@ -9,7 +9,7 @@ pub fn HomePage() -> impl IntoView {
     view! {
         <>
             <Hero />
-            <DessertsList />
+            <Desserts />
             <Kitchen />
         </>
     }
