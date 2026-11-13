@@ -1,9 +1,9 @@
+use crate::modules::desserts::components::desserts::Desserts;
 use leptos::prelude::*;
 
-use crate::routes::home::components::desserts::Desserts;
 stylance::import_crate_style!(
     style,
-    "src/routes/home/components/desserts_list/desserts_list.module.scss"
+    "src/modules/desserts/components/desserts_list/desserts_list.module.scss"
 );
 stylance::import_crate_style!(shared, "style/shared.module.scss");
 

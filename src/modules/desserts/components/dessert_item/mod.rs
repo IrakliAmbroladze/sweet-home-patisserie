@@ -1,13 +1,13 @@
-use crate::routes::home::constants::DessertItem;
+use crate::modules::desserts::constants;
 use leptos::prelude::*;
 
 stylance::import_crate_style!(
     style,
-    "src/routes/home/components/dessert_item/dessert_item.module.scss"
+    "src/modules/desserts/components/dessert_item/dessert_item.module.scss"
 );
 
 #[component]
-pub fn DessertCard(item: &'static DessertItem) -> impl IntoView {
+pub fn DessertCard(item: &'static constants::DessertItem) -> impl IntoView {
     view! {
         <div class=style::card>
             <div class=style::image_wrapper>
