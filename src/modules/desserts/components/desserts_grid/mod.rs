@@ -16,7 +16,7 @@ pub fn DessertsGrid() -> impl IntoView {
         if location.pathname.get() == "/desserts" {
             &DESSERTS
         } else {
-            &DESSERTS[..3]
+            &DESSERTS[..4]
         }
     };
 
