@@ -5,8 +5,14 @@ stylance::import_crate_style!(
     style,
     "src/modules/contact/components/contact/contact.module.scss"
 );
+stylance::import_crate_style!(shared, "style/shared.module.scss");
 #[component]
 pub fn Contact() -> impl IntoView {
     println!("{:?}", data::WEEKLY_SCHEDULE);
-    view! { <>"I change this is contact view page"</> }
+    view! {
+        <div class=shared::container>
+            <h1 class=style::title>"მირაქი"</h1>
+            <div class=style::subtitle>"დესერტები"</div>
+        </div>
+    }
 }
