@@ -1,3 +1,10 @@
+.wrapper {
+  padding: 40px 0px;
+  background-color: #faf9f6;
+  min-height: calc(100vh - 80px);
+  color: #4b2d2d;
+}
+
 .title {
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -51,6 +58,42 @@
         text-decoration: underline;
       }
     }
+  }
+}
+
+.schedule_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 0.95rem;
+
+    span:first-child {
+      font-weight: 600;
+      color: #4b2d2d;
+    }
+
+    span:last-child {
+      color: #665;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.delivery {
+  grid-column: 1 / -1;
+
+  p {
+    margin-bottom: 15px;
+    color: #665;
   }
 }
 
