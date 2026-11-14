@@ -23,7 +23,7 @@
 
 .grid-e55d39f {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 30px;
 
 }
@@ -97,8 +97,8 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .grid-e55d39f {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
