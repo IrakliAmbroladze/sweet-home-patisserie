@@ -10,11 +10,8 @@ pub fn BurgerIcon(
     #[prop(into)] is_open: Signal<bool>,
     #[prop(into)] on_toggle: Callback<()>,
 ) -> impl IntoView {
-    let (rotation_deg, set_rotation_deg) = signal(0);
-
     let on_click = move |_| {
         on_toggle.run(());
-        set_rotation_deg.update(|prev| *prev += 90);
     };
 
     view! {
@@ -23,7 +20,6 @@ pub fn BurgerIcon(
             aria-label="Menu"
             type="button"
             class=style::burger_icon
-            style=move || format!("transform: rotate({}deg);", rotation_deg.get())
             on:click=on_click
         >
             {move || {
