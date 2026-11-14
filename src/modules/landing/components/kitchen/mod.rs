@@ -26,6 +26,7 @@ pub fn Kitchen() -> impl IntoView {
 
                 </div>
             </div>
+            <br />
         </section>
     }
 }

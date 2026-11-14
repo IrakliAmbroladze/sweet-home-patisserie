@@ -6,7 +6,7 @@ use leptos_router::{
 };
 
 use crate::{
-    routes::{contact::ContactPage, desserts::DessertsPage, home::HomePage},
+    routes::{about_us::AboutUsPage, contact::ContactPage, desserts::DessertsPage, home::HomePage},
     shared::components::header::Header,
 };
 
@@ -55,6 +55,7 @@ pub fn App() -> impl IntoView {
                     <Route path=StaticSegment("") view=HomePage />
                     <Route path=StaticSegment("/desserts") view=DessertsPage />
                     <Route path=StaticSegment("/contact") view=ContactPage />
+                    <Route path=StaticSegment("/about-us") view=AboutUsPage />
                 </Routes>
             </main>
         </Router>
