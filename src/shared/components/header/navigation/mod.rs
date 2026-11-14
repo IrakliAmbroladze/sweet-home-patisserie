@@ -13,16 +13,13 @@ stylance::import_crate_style!(
 #[component]
 pub fn Navigation() -> impl IntoView {
     let (is_burger_menu_open, set_is_burger_menu_open) = signal(false);
-    let close_menu = move |_| {
-        set_is_burger_menu_open.set(false);
-    };
+
+    let toggle_menu = move |_| set_is_burger_menu_open.update(|prev| *prev = !*prev);
+    let close_menu = move |_| set_is_burger_menu_open.set(false);
 
     view! {
         <>
-            <BurgerIcon
-                is_open=is_burger_menu_open
-                on_toggle=move |_| set_is_burger_menu_open.update(|prev| *prev = !*prev)
-            />
+            <BurgerIcon is_open=is_burger_menu_open on_toggle=toggle_menu />
             <nav class=move || {
                 if is_burger_menu_open.get() {
                     format!("{} {}", style::navigation, style::open)
