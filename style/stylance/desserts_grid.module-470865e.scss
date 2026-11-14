@@ -1,0 +1,29 @@
+  .grid-470865e {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 16px;
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+
+  @media(min-width: 600px) {
+
+    .grid-470865e {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media(min-width: 1000px) {
+
+    .grid-470865e {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media(min-width: 1200px) {
+
+    .grid-470865e {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }

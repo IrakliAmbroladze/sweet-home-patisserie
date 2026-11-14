@@ -5,12 +5,15 @@ use leptos_router::{
     StaticSegment,
 };
 
-use crate::{routes::home::HomePage, shared::components::header::Header};
+use crate::{
+    routes::{about_us::AboutUsPage, contact::ContactPage, desserts::DessertsPage, home::HomePage},
+    shared::components::header::Header,
+};
 
 pub fn shell(options: LeptosOptions) -> impl IntoView {
     view! {
         <!DOCTYPE html>
-        <html lang="en">
+        <html lang="ka">
             <head>
                 <meta charset="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -50,6 +53,9 @@ pub fn App() -> impl IntoView {
             <main>
                 <Routes fallback=|| "Page not found.".into_view()>
                     <Route path=StaticSegment("") view=HomePage />
+                    <Route path=StaticSegment("/desserts") view=DessertsPage />
+                    <Route path=StaticSegment("/contact") view=ContactPage />
+                    <Route path=StaticSegment("/about-us") view=AboutUsPage />
                 </Routes>
             </main>
         </Router>

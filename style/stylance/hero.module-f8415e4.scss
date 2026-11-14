@@ -1,0 +1,81 @@
+.hero-f8415e4 {
+  position: relative;
+  background-image: url("/images/patisseries.jpg");
+  background-repeat: no-repeat;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero-f8415e4::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-f8415e4>* {
+  position: relative;
+  z-index: 2;
+}
+
+.container-f8415e4 {
+  margin: 0 10px;
+  height: 100%;
+}
+
+.wrapper-f8415e4 {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+  font-weight: 700;
+
+  .title-f8415e4 {
+    color: #f0f8ff;
+    font-size: 1.5rem
+  }
+}
+
+.heart-f8415e4 {
+  height: 30px;
+  display: flex;
+
+  img {
+    margin: 0 30px;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.desserts_btn_wrapper-f8415e4 {
+  display: flex;
+
+  .desserts_btn-f8415e4 {
+    border-radius: 4px;
+    padding: 8px 12px;
+    color: #f0f8ff;
+    background-color: #654321;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-f8415e4 {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 1420px) {
+  .container-f8415e4 {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+  }
+}
