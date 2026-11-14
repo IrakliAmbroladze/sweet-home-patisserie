@@ -13,6 +13,28 @@ pub fn Contact() -> impl IntoView {
         <div class=shared::container>
             <h1 class=style::title>"მირაქი"</h1>
             <div class=style::subtitle>"დესერტები"</div>
+            <div class=style::grid>
+                <div class=style::card>
+                    <h2>"დაგვიკავშირდი"</h2>
+                    <p>
+                        <strong>"მისამართი:"</strong>
+                        <br />
+                        "მარჯიანის ქ. 16"
+                        <br />
+                        "0186 თბილისი, საქართველო"
+                    </p>
+                    <p>
+                        <strong>"ტელეფონი:"</strong>
+                        <br />
+                        <a href="tel:+995598858635">"+995 598 85 86 35"</a>
+                    </p>
+                    <p>
+                        <strong>"ბიზნესის ტიპი:"</strong>
+                        <br />
+                        "დესერტები და საკონდიტრო ნაწარმი"
+                    </p>
+                </div>
+            </div>
         </div>
     }
 }
