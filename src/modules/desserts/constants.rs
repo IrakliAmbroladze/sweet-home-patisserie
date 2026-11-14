@@ -62,7 +62,7 @@ pub const DESSERTS: &[DessertItem] = &[
         img: "/images/dessert_11.jpg",
     },
     DessertItem {
-        title: "გელატო / ნაყინი",
+        title: "ჯელატო / ნაყინი",
         desc: "ცივი და გამაგრილებებელი",
         img: "/images/dessert_12.jpg",
     },
