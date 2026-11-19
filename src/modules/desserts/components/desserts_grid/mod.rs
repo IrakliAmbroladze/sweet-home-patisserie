@@ -1,7 +1,6 @@
-use super::super::constants::DESSERTS;
+use super::super::constants::DessertItem;
 use crate::modules::desserts::components::dessert_item::DessertCard;
 use leptos::prelude::*;
-use leptos_router::hooks::use_location;
 
 stylance::import_crate_style!(
     style,
@@ -9,20 +8,10 @@ stylance::import_crate_style!(
 );
 
 #[component]
-pub fn DessertsGrid() -> impl IntoView {
-    let location = use_location();
-
-    let desserts = move || {
-        if location.pathname.get() == "/desserts" {
-            &DESSERTS
-        } else {
-            &DESSERTS[..4]
-        }
-    };
-
+pub fn DessertsGrid(items: &'static [DessertItem]) -> impl IntoView {
     view! {
         <div class=style::grid>
-            {move || desserts().iter().map(|item| view! { <DessertCard item /> }).collect_view()}
+            {items.iter().map(|item| view! { <DessertCard item /> }).collect_view()}
         </div>
     }
 }

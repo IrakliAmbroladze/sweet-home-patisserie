@@ -1,4 +1,4 @@
-use crate::modules::desserts::components::desserts_grid::DessertsGrid;
+use crate::modules::desserts::{components::desserts_grid::DessertsGrid, constants::DESSERTS_LIST};
 use leptos::prelude::*;
 
 stylance::import_crate_style!(
@@ -8,11 +8,14 @@ stylance::import_crate_style!(
 stylance::import_crate_style!(shared, "style/shared.module.scss");
 
 #[component]
-pub fn Desserts() -> impl IntoView {
+pub fn Desserts(#[prop(optional)] limit: Option<usize>) -> impl IntoView {
+    let items = limit
+        .and_then(|n| DESSERTS_LIST.get(..n))
+        .unwrap_or(DESSERTS_LIST);
     view! {
         <section class=[shared::container, style::wrapper].join(" ")>
-            <h2 class=style::title>ჩვენი დესერტები</h2>
-            <DessertsGrid />
+            <h2 class=style::title>"ჩვენი დესერტები"</h2>
+            <DessertsGrid items />
         </section>
     }
 }
