@@ -5,7 +5,7 @@ pub(super) struct DessertItem {
     pub img: &'static str,
 }
 
-pub const DESSERTS: &[DessertItem] = &[
+pub const DESSERTS_LIST: &[DessertItem] = &[
     DessertItem {
         title: "ტორტები",
         desc: "კლასიკური და საფირმო",
