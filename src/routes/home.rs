@@ -9,7 +9,7 @@ pub fn HomePage() -> impl IntoView {
     view! {
         <>
             <Hero />
-            <Desserts />
+            <Desserts limit=8 />
             <Kitchen />
         </>
     }
